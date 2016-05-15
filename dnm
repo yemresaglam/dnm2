@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+void main() {
+	int sum=0,i=0;
+	int *compute_sum(){
+		return &sum;
+	}
+	for(i=0;i<10;i++){
+	f(compute_sum(), i);
+	printf("Sum = %d \n" ,sum);
+	}
+}
+
+void f(int *compute_sum, int i){
+	*compute_sum = *compute_sum + (i*i+3*i-1);
+}
